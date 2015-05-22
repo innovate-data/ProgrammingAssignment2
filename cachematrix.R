@@ -51,11 +51,11 @@ cacheSolve <- function(x, ...)
     }
     
     ## if matrix inverse is not in cache, compute the matrix inverse and cache it.
-      ## 1.get the matrix
+      ## 1. get the matrix
       data <- x$get()
-      ## 2.compute the inverse of the matrix
+      ## 2. compute the inverse of the matrix
       inv <- solve(data)
-      ## 3.cache the inverse of matrix
+      ## 3. cache the inverse of matrix
       x$setinverse(inv)
     
     ## return a matrix that is the inverse of 'x'
